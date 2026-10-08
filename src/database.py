@@ -9,3 +9,7 @@ db_port = 5432
 
 user_id = request.args.get("id")
 query = "SELECT * FROM users WHERE id = " + user_id
+
+# Intentional scanner test finding: SQL Injection using f-string.
+
+query_fstring = f"SELECT * FROM users WHERE id = {user_id}"
