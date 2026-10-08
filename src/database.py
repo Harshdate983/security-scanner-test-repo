@@ -5,3 +5,7 @@ db_password = "fake-db-password-456"
 db_host = "localhost"
 db_name = "test_database"
 db_port = 5432
+# Intentional scanner test finding: SQL Injection.
+
+user_id = request.args.get("id")
+query = "SELECT * FROM users WHERE id = " + user_id
