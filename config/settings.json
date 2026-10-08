@@ -1,0 +1,7 @@
+{
+  "application_name": "Security Scanner Test",
+  "environment": "development",
+  "api_key": "fake-json-api-key-123",
+  "password": "fake-json-password-123",
+  "debug": false
+}
